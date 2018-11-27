@@ -27,3 +27,256 @@ body {
   height: 100%;
   width: 100%;
 }
+
+
+/* PAGE 1 */
+/* PAGE 1 */
+
+
+.page1 {
+  background-color: #4A90E2;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  z-index: -1;
+}
+
+.livingIn{
+  width: 341px; 
+  height: 175px;
+  position: relative;
+  top: 25% ;
+  left: 27%;
+  z-index: 1;
+}
+
+#livingInText {
+  font-family: Abuget;
+  font-size: 175px;
+  color: #F8E71C;
+  text-align: center;
+}
+
+.newYorkTitle {
+  width: 657px;
+  height: 125px;
+  position: relative;
+  top: 17%;
+  left: 33%
+}
+
+#newYorkTitleText {
+  font-family: Montserrat-Bold;
+  font-size: 85px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 20px 20px 21px rgba(0,0,0,0.50);
+}
+
+
+ /* PAGE 2 */
+ /* PAGE 2 */
+
+
+.page2 {
+  background-image: linear-gradient(-180deg, #4A90E2 0%, #FFFFFF 87%);
+  width: 100%;
+  height: 1012px;
+  position: absolute;
+  z-index: -2;
+  top: 800px;
+}
+
+.road {
+  background: #FFFFFF;
+  width: 70%;
+  height: 40px;
+  position: relative;
+  top: 20%;
+  left:30%;
+}
+
+.taxi1 {
+  position: relative;
+    top: 20%;
+    left: 30%;
+    width: 490px;
+    height: 155px;
+    z-index: 1;
+}
+
+.taxi2 {
+  position: relative;
+    top: 20%;
+    left: 55%;
+    width: 490px;
+    height: 155px;
+    z-index: 0;
+    transform: rotate(180deg); 
+}
+
+.page2circle {
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    height: 600px;
+    width: 300px;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    position: relative;
+    top: -30%;
+    left: 80%;
+}
+
+.rectangle {
+  fill: #FFFFFF;
+  z-index: 1;
+  
+}
+
+#rectangle1 {
+    position: relative;
+    bottom: 40%;
+
+}
+
+#rectangle1text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 25pt;
+    letter-spacing: 5pt;
+    fill: #000000;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
+
+#rectangle2 {
+    position: relative;
+    bottom: 35%; 
+}
+
+#rectangle2text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 25pt;
+    letter-spacing: 5pt;
+    fill: #000000;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
+
+#rectangle3 {
+    position: relative;
+    bottom: 30%; 
+}
+
+#rectangle3text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 25pt;
+    letter-spacing: 5pt;
+    fill: #000000;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
+
+.bluepath1 {
+  position: absolute;
+    top: 36%;
+    left: 33%;
+    width: 490px;
+    height: 155px;
+    z-index: -1;
+}
+
+.greenpath1 {
+  position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 490px;
+    height: 155px;
+    z-index: -1;
+}
+
+
+
+/* PAGE 3 */
+/* PAGE 3 */
+
+
+.page3 {
+  width: 100%;
+  height: 1012px;
+  position: absolute;
+  z-index: -2;
+  top: 1800px;
+}
+
+.bluepath2 {
+  position: absolute;
+    top: 8%;
+    left: 32.5%;
+    z-index: -1;
+}
+
+.greenpath2 {
+  position: absolute;
+    top: 8%;
+    left: 50%;
+    z-index: -1;
+}
+
+.yellowpath {
+  position: absolute;
+    top: 25%;
+    left: -1%;
+    z-index: -1;
+}
+
+.orangepath {
+  position: absolute;
+    top: 8%;
+    left: -1%;
+    z-index: -2;
+}
+
+.subwaycard {
+  position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+}
+
+.card1 {
+  width: 360px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 125%;
+    left: 3%;
+    z-index: 2;
+  box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.15);
+}
+
+#card1text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+  font-size: 15pt;
+  letter-spacing: 5pt;
+  fill: #000000;
+  position: relative;
+  top: 40%; 
+}
