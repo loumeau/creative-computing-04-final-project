@@ -47,13 +47,13 @@ body {
   position: relative;
   text-align: center;
   z-index: 1;
-  top: 30%;
-  left: -10%;
+  top: 26%;
+  left: -12%;
 }
 
 #livingInText {
-  font-family: Abuget;
-  font-size: 175px;
+  font-family: Pacifico;
+  font-size: 90px;
   color: #F8E71C;
   text-align: center;
 }
