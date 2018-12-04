@@ -6,6 +6,7 @@
         <title>04 // Final Project</title>
         <link href="css/style.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body>
         <div class="content">
@@ -14,7 +15,7 @@
 
 
 
-        <div class="page1">
+        <section class="page1">
             <div class="livingIn">
                 <text id="livingInText">
                     <tspan>Living in</tspan>
@@ -25,9 +26,9 @@
                     <tspan>New York</tspan>
                 </text>
             </div>
-        </div>
+        </section>
 
-        <div class="page2">
+        <section class="page2">
             <div class="taxi1">
                 <img src="images/taxi.png" alt="taxi" style="width:490px;height:207px;">
             </div>
@@ -51,15 +52,22 @@
                     <tspan>AVERAGE DRIVER SALERY $42,228</tspan>
                 </text>
             </div>
+
+            <script>
+            ScrollReveal().reveal('#rectangle1')
+            ScrollReveal().reveal('#rectangle2', { delay: 500 })
+            ScrollReveal().reveal('#rectangle3', { delay: 1000 })
+            </script>
+
             <div class="bluepath1">
                 <img src="images/bluepath1.png" alt="blue path 1" style="width:51px;height:720px;">
             </div>
             <div class="greenpath1">
                 <img src="images/greenpath1.png" alt="green path 1" style="width:51px;height:720px;">
             </div>
-        </div>
+        </section>
 
-        <div class="page3">
+        <section class="page3">
             <div class="bluepath2">
                 <img src="images/bluepath2.png" alt="blue path 2" style="width:389px;height:1887px;">
             </div>
@@ -75,15 +83,81 @@
             <div class="subwaycard">
                 <img src="images/subwaycard.png" alt="subway card" style="width:600px;height:359px;">
             </div>
-    
             <div class="card1">
                 <text id="card1text">
                     <tspan>About 600,000 dogs live in New York City</tspan>
                 </text>
             </div>
+            <div class="card2">
+                <text id="card2text">
+                    <tspan>It takes 75,000 trees to print a Sunday edition of the New York Times</tspan>
+                </text>
+            </div>
+            <div class="card3">
+                <text id="card3text">
+                    <tspan>1 in every 38 Americans lives in NYC</tspan>
+                </text>
+            </div>
+            <div class="dog">
+                <img src="images/dog.svg" alt="dog" style="width:250px;height:250px;">
+            </div>
+            <div class="newspaper">
+                <img src="images/news.svg" alt="newspaper" style="width:250px;height:140px;">
+            </div>
+            <div class="pin">
+                <img src="images/pin.svg" alt="pin" style="width:40px;height:140px;">
+            </div>
 
+        </section>
+
+        <section class="page4">
+            <div class="subway-car"></div>
+            <div class="container1"> 
+                <p>NYC EATING HABBITS</p>
+            </div>
+            <div class="container2">
+                <p>Manhatten has a Starbucks every 5.6 blocks</p>
+            </div>
+            <div class="container3">
+                <p>12,000 street food vendors</p>
+            </div>
+            <div class="container4">
+                <p>New Yorkers drink 7x more coffee than other cities</p>
+            </div>
+            <div class="redbox">
+                <h1>AVERAGE COST FOR TWO PEOPLE</h1>
+                <p id=box1>70</p>
+                <p id=box2>130</p>
+                <p id=box3>30</p>
+                <p id=box4>$</p>
+                <p id=box5>BRUNCH</p>
+                <p id=box6>DINNER</p>
+                <p id=box7>DRINKS</p>     
+            </div>
+
+            <script>
+            ScrollReveal().reveal('#box1')
+            ScrollReveal().reveal('#box2', { delay: 500 })
+            ScrollReveal().reveal('#box3', { delay: 1000 })
+            </script>
+
+        </section>
+
+
+        <footer class="footer">
+        <div>
+            <p id="footertitle">Sources</p>
+            <p>
+                https://www.ef.com/wwen/blog/language/new-york-infographic/
+                <br>
+                https://lemonly.com/marriott/new-york-city/
+                <br>
+                http://theanthrotorian.com/travel/2017/5/14/dining-in-new-york-city-by-the-numbers-infographic
+                <br>
+
+            </p>
         </div>
-
-
+    </footer>
     </body>
+    
 </html>

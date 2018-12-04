@@ -12,6 +12,8 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .center {
@@ -42,12 +44,11 @@ body {
 }
 
 .livingIn{
-  width: 341px; 
-  height: 175px;
   position: relative;
-  top: 25% ;
-  left: 27%;
+  text-align: center;
   z-index: 1;
+  top: 30%;
+  left: -10%;
 }
 
 #livingInText {
@@ -105,6 +106,20 @@ body {
     z-index: 1;
 }
 
+.taxi1:hover {
+  animation: taxishake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes taxishake {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-.05deg);}
+  100% {transform: rotate(.05deg);}
+}
+
+
 .taxi2 {
   position: relative;
     top: 20%;
@@ -138,6 +153,7 @@ body {
     bottom: 40%;
 
 }
+
 
 #rectangle1text {
   font-family: "Montserrat-SemiBold", Montserrat;
@@ -206,7 +222,7 @@ body {
 .greenpath1 {
   position: absolute;
     top: 36%;
-    left: 50%;
+    left: 40%;
     width: 490px;
     height: 155px;
     z-index: -1;
@@ -236,7 +252,7 @@ body {
 .greenpath2 {
   position: absolute;
     top: 8%;
-    left: 50%;
+    left: 40%;
     z-index: -1;
 }
 
@@ -259,6 +275,26 @@ body {
     top: 60%;
     left: 50%;
     z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+
+.subwaycard:hover,
+.subwaycard:focus,
+.subwaycard:active {
+    transform: scale(1.1);
+}
+
+@keyframes subwaycard{
+  0% {scale: 1;}
+  50% {scale: 2;}
+  100% {scale: 1;}
 }
 
 .card1 {
@@ -269,14 +305,385 @@ body {
     top: 125%;
     left: 3%;
     z-index: 2;
+    text-align: center;
   box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.15);
 }
 
 #card1text {
   font-family: "Montserrat-SemiBold", Montserrat;
   font-size: 15pt;
-  letter-spacing: 5pt;
+  letter-spacing: 3pt;
   fill: #000000;
   position: relative;
   top: 40%; 
+}
+
+.card2 {
+  width: 360px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 163%;
+    left: 35%;
+    z-index: 2;
+    text-align: center;
+  box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.15);
+}
+
+#card2text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+  font-size: 15pt;
+  letter-spacing: 3pt;
+  fill: #000000;
+  position: relative;
+  top: 40%; 
+}
+
+.card3 {
+    width: 360px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    top: 137%;
+    left: 69%;
+    z-index: 2;
+    text-align: center;
+  box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.15);
+}
+
+#card3text {
+  font-family: "Montserrat-SemiBold", Montserrat;
+  font-size: 15pt;
+  letter-spacing: 3pt;
+  fill: #000000;
+  position: relative;
+  top: 40%; 
+}
+
+.dog {
+  position: absolute;
+    top: 108%;
+    left: 15%;
+    z-index: 2;
+}
+
+.newspaper {
+  position: absolute;
+    top: 183%;
+    left: 40%;
+    z-index: 2;
+    animation-name: newspaperanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes newspaperanimation {
+    0%   {left:40%;   top:183%;}
+    25%  {left:41%;   top:182%;}
+    50%  {left:42%;   top:183%;}
+    75%  {left:41%;   top:182%;}
+    100% {left:40%;   top:183%;}
+}
+
+.newspaper:hover {
+  animation: newspaperhover;
+  animation-duration: .5s;
+}
+
+@keyframes newspaperhover {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(720deg);}
+}
+
+.pin {
+  position: absolute;
+    top: 132%;
+    left: 72%;
+    z-index: 2;
+    animation-name: pinanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    padding: 4px;
+}
+
+.pin:hover {
+  animation: pinhover;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pinhover {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+@keyframes pinanimation {
+    0%   {top:130%;}
+    25%  {top:130%;}
+    50%  {top:132%;}
+    75%  {top:130%;}
+    100% {top:130%;}
+}
+
+
+/* PAGE 4 */
+/* PAGE 4 */
+
+
+.page4 {
+  width: 100%;
+  height: 1072px;
+  position: absolute;
+  z-index: -2;
+  top: 3850px;
+  background-color: #a1d9d4;
+}
+
+.subway-car {
+  width: 100%;
+  height: 409px;
+  background-image: url("file:///Users/kevinloumeau/Desktop/CLASSES/CREATIVE%20COMPUTING/Code/creative-computing-04-final-project/images/subway-car.svg");
+  background-repeat: repeat-x;
+  position: absolute;
+  z-index: 0;
+  top: 0%;
+  animation-name: subwaycaranimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes subwaycaranimation {
+    0%, 100%    {left:0%;}
+    25%, 75%    {left:1%;}
+    50%         {left:.5%;}
+}
+
+
+.container1 {
+    height: 10px;
+    position: absolute;
+    left: 50%; 
+    top: 500px;
+    transform: translate(-50%, -50%);
+    padding: 5px;}
+
+.container1 p {
+    margin: 0;
+    font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 25pt;
+    letter-spacing: 5pt;
+    fill: #000000;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    border:12px inset #76d882;
+    background-color: whitesmoke;
+    padding: 10px;
+    top: -50px;
+  }
+
+.container2 {
+    height: 10px;
+    width: 340px;
+    position: absolute; 
+    left: 25%;
+    top: 630px;
+    transform: translate(-50%, -50%);}
+
+.container2 p {
+    margin: 0;
+    font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 15pt;
+    letter-spacing: 0;
+    fill: #000000;
+    position: absolute;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+  }
+
+.container3 {
+    height: 10px;
+    width: 340px;
+    position: absolute;
+    left: 50%;
+    top: 630px;
+    transform: translate(-50%, -50%);
+  }
+.container3 p {
+    margin: 0;
+    font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 15pt;
+    letter-spacing: 0;
+    fill: #000000;
+    position: absolute;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container4 {
+    height: 10px;
+    width: 340px;
+    position: absolute;
+    left: 75%;
+    top: 630px;
+    transform: translate(-50%, -50%);
+  }
+.container4 p {
+    margin: 0;
+    font-family: "Montserrat-SemiBold", Montserrat;
+    font-size: 15pt;
+    letter-spacing: 0;
+    fill: #000000;
+    position: absolute;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+  }
+.redbox {
+  width: 900px;
+  height: 220px;
+  background-color: #DAA3A3;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.redbox h1 {
+  position: relative;
+  text-align: center;
+  font-family: "Montserrat-Bold", Montserrat;
+  font-size: 15pt;
+  letter-spacing: 0;
+  fill: #000000;
+  padding: 10px;
+  z-index: 2;
+
+}
+
+.redbox p {
+  font-family: Montserrat-Light;
+  font-size: 150px;
+  color: #000000;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+}
+
+#box1 {
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  top: -85%;
+  left: 10%;
+}
+
+#box2 {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  top: -237%;
+  left: 0%;
+}
+
+#box3 {
+  text-align: right;
+  position: relative;
+  z-index: 2;
+  top: -387%;
+  right: 10%;
+}
+
+#box4 {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  top: -584%;
+  left: 0%;
+  font-family: Montserrat-SemiBold;
+  font-size: 208px;
+  color: rgba(255,255,255,0.50);
+}
+
+#box5 {
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 16%;
+  font-family: Montserrat-SemiBold;
+  font-size: 15px;
+}
+
+#box6 {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 46%;
+  font-family: Montserrat-SemiBold;
+  font-size: 15px;
+}
+
+#box7 {
+  text-align: right;
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  right: 16%;
+  font-family: Montserrat-SemiBold;
+  font-size: 15px;
+}
+
+
+
+
+/*  FOOTER */
+/*  FOOTER */
+
+
+
+.footer {
+  background-color: black;
+  height: 250px;
+  width: 100%;
+  padding: 1rem;
+  color: black;
+}
+
+.footer p {
+  font-family: Montserrat-Light;
+  font-size: 18px;
+  color: #FFFFFF;
+  position: relative;
+  text-align: left;
+  left: 15%;
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ top: 4900PX;
+}
+
+#footertitle {
+  font-size: 20px;
+  padding: 1px;
+  font-family: Montserrat-semibold;
 }
